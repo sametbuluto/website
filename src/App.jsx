@@ -221,8 +221,9 @@ function MainContent({ onLogout, setActiveView, activeView, isPlaying, setIsPlay
       {/* Navigation - Fixed Outside Animated Container */}
       <nav className={`fixed top-0 w-full z-[110] transition-all duration-500 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-2xl font-script text-romantic-600 relative z-[120] hover:scale-105 transition-transform">
-            Samet & Melike
+          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-2xl font-script text-romantic-600 relative z-[120] hover:scale-105 transition-transform flex items-center gap-2">
+            <Heart className="w-6 h-6 fill-rose-500 text-rose-500 animate-pulse" />
+            Bizim Hikayemiz
           </button>
 
           {/* Desktop Nav */}
@@ -418,8 +419,9 @@ function MainContent({ onLogout, setActiveView, activeView, isPlaying, setIsPlay
 
         <footer className="bg-white border-t border-romantic-200 py-12">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-2xl font-script text-romantic-600">
-              Samet & Melike
+            <div className="text-2xl font-script text-romantic-600 flex items-center gap-2">
+              <Heart className="w-6 h-6 fill-rose-500 text-rose-500" />
+              Bizim Hikayemiz
             </div>
             <p className="text-romantic-500 text-sm font-medium">
               © 2024 Sonsuza dek seninle... ❤️
